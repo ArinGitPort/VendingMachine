@@ -16,6 +16,7 @@ public class main {
             frame.getContentPane().add(new VendingMachineFrame());
             frame.pack();
             frame.setVisible(true);
+            frame.setResizable(false);
         });
     }
 }

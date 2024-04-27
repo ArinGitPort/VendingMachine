@@ -10,7 +10,7 @@
 class Coke implements Beverage {
     @Override
     public String getName() {
-        return "Cola";
+        return "Coke";
     }
 
     @Override

@@ -9,6 +9,7 @@
  */
 import javax.swing.JOptionPane;
 import javax.swing.*;
+
 public class VendingMachineFrame extends javax.swing.JPanel {
 
     private Beverage coke = new Coke();
@@ -20,6 +21,13 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private Product selectedProduct;
 
     private double totalMoney = 0.0;
+
+    private int cokeAvailability = 10;
+    private int waterAvailability = 10;
+    private int coffeeAvailability = 10;
+    private int cheetosAvailability = 10;
+    private int doritosAvailability = 10;
+    private int burgerAvailability = 10;
 
     /**
      * Creates new form VendingMachineFrame
@@ -46,6 +54,8 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jButton13 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -127,10 +137,31 @@ public class VendingMachineFrame extends javax.swing.JPanel {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Webp.net-resizeimage.png"))); // NOI18N
 
+        jLabel10.setBackground(new java.awt.Color(0, 204, 204));
+        jLabel10.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Balance");
+        jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jButton13.setBackground(new java.awt.Color(0, 153, 153));
+        jButton13.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(255, 255, 255));
+        jButton13.setText("CASH OUT");
+        jButton13.setName("Cheetos"); // NOI18N
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(59, 59, 59))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -143,12 +174,12 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                             .addComponent(jButton3)
                             .addComponent(jButton1)
                             .addComponent(jButton4)
-                            .addComponent(jButton5))))
-                .addContainerGap(51, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(59, 59, 59))
+                            .addComponent(jButton5)
+                            .addComponent(jLabel10)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(jButton13)))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,7 +198,11 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                 .addComponent(jButton5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
+                .addComponent(jButton13)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(0, 102, 102));
@@ -218,31 +253,37 @@ public class VendingMachineFrame extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coke.png"))); // NOI18N
         jLabel4.setText("Coke");
         jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel5.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/water.png"))); // NOI18N
         jLabel5.setText("Water");
         jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel6.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee-cup.png"))); // NOI18N
         jLabel6.setText("Coffee");
         jLabel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel7.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/burger.png"))); // NOI18N
         jLabel7.setText("Burger");
         jLabel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel8.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chips.png"))); // NOI18N
         jLabel8.setText("Doritos");
         jLabel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel9.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chips.png"))); // NOI18N
         jLabel9.setText("Cheetos");
         jLabel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabel9.setName(""); // NOI18N
@@ -284,76 +325,73 @@ public class VendingMachineFrame extends javax.swing.JPanel {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(62, 62, 62)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton7)
-                        .addGap(96, 96, 96)
-                        .addComponent(jButton9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton8))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton12)
-                        .addGap(98, 98, 98)
-                        .addComponent(jButton11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
-                        .addComponent(jButton10)))
-                .addGap(47, 47, 47))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(jLabel9)
-                        .addGap(108, 108, 108)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel7))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(246, 246, 246)
-                                .addComponent(jLabel2))
+                                .addGap(184, 184, 184)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE))
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(92, 92, 92)
-                                .addComponent(jLabel4)
-                                .addGap(143, 143, 143)
-                                .addComponent(jLabel5)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel6)))
-                .addGap(63, 63, 63))
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jButton7))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGap(69, 69, 69)))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jButton8)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton12)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addComponent(jLabel4)))
+                        .addGap(88, 88, 88)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel6))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jButton11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton10)))))
+                .addGap(47, 47, 47))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(241, 241, 241))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jLabel3)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(jLabel3))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(144, 144, 144)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel9)
-                                        .addComponent(jLabel8)))))
-                        .addGap(81, 81, 81)
-                        .addComponent(jButton7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton9)
+                            .addComponent(jButton7)
                             .addComponent(jButton8))
-                        .addGap(82, 82, 82)))
+                        .addGap(64, 64, 64))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel2)
-                .addGap(74, 74, 74)
+                .addGap(110, 110, 110)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(jLabel6)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel6))
-                .addGap(64, 64, 64)
+                    .addComponent(jLabel4))
+                .addGap(28, 28, 28)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton12)
                     .addComponent(jButton11)
@@ -403,80 +441,106 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         totalMoney += 20.0;
         // Update the display
-        jLabel3.setText("Total Money: PHP " + totalMoney);
-        selectedProduct = coke;
+        jLabel10.setText("Bal: PHP " + totalMoney);
+        jLabel10.setVisible(true);
+
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         totalMoney += 70.0;
         // Update the display
-        jLabel3.setText("Total Money: PHP " + totalMoney);
+        jLabel10.setText("Bal: PHP " + totalMoney);
+        jLabel10.setVisible(true);
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         totalMoney += 10.0;
         // Update the display
-        jLabel3.setText("Total Money: PHP " + totalMoney);
+        jLabel10.setText("Bal: PHP " + totalMoney);
+        jLabel10.setVisible(true);
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         totalMoney += 30.0;
         // Update the display
-        jLabel3.setText("Total Money: PHP " + totalMoney);
+        jLabel10.setText("Bal: PHP " + totalMoney);
+        jLabel10.setVisible(true);
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         totalMoney += 50.0;
         // Update the display
-        jLabel3.setText("Total Money: PHP " + totalMoney);
+        jLabel3.setText("Bal: PHP " + totalMoney);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        buyProduct(new Coke(), 40.0);
+        buyProduct(new Coke(), 40.0, cokeAvailability);
+        cokeAvailability--;
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        buyProduct(new Cheetos(), 50.0);
+        buyProduct(new Cheetos(), 50.0, cheetosAvailability);
+        cheetosAvailability--;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        buyProduct(new Doritos(), 30.0);
+        buyProduct(new Doritos(), 30.0, doritosAvailability);
+        doritosAvailability--;
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        buyProduct(new Burger(), 100.0);
+        buyProduct(new Burger(), 100.0, burgerAvailability);
+        burgerAvailability--;
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        buyProduct(new Water(), 10.0);
+        buyProduct(new Water(), 10.0, waterAvailability);
+        waterAvailability--;
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        buyProduct(new Coffee(), 120.0);
+        buyProduct(new Coffee(), 120.0, coffeeAvailability);
+        coffeeAvailability--;
     }//GEN-LAST:event_jButton10ActionPerformed
-    private void buyProduct(Product product, double price) {
-        // Check if the totalMoney is sufficient to buy the product
-        if (totalMoney >= price) {
-            // Deduct the price of the product from totalMoney
-            totalMoney -= price;
-            // Update the display to show remaining money
-            jLabel3.setText("Total Money: PHP " + totalMoney);
-            // Display a message to indicate successful purchase
-            JOptionPane.showMessageDialog(this, "Thank you for purchasing " + product.getName() + ". Your change: PHP " + totalMoney);
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        JOptionPane.showMessageDialog(this, "Remaining Funds: PHP " + totalMoney);
+        if (totalMoney == 0) {
+            JOptionPane.showMessageDialog(this, "You have no balance");
         } else {
-            // Display a message indicating insufficient funds
-            JOptionPane.showMessageDialog(this, "Insufficient funds.");
+            JOptionPane.showMessageDialog(this, "Cashing Out: PHP " + totalMoney);
+            totalMoney = 0.0;
+            jLabel10.setText("Bal: PHP " + totalMoney);
+        }
+    }//GEN-LAST:event_jButton13ActionPerformed
+    private void buyProduct(Product product, double price, int availability) {
+        if (availability > 0) {
+            if (totalMoney >= price) {
+                totalMoney -= price;
+                jLabel10.setText("Bal: PHP " + totalMoney);
+                jLabel10.setVisible(true);
+                jLabel10.repaint();
+                JOptionPane.showMessageDialog(this, "Thank you for purchasing " + product.getName() + ". Your Balance: PHP " + totalMoney);
+            } else {
+                JOptionPane.showMessageDialog(this, "Insufficient funds.");
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, product.getName() + " is out of stock.");
         }
     }
-    
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -485,6 +549,7 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
