@@ -369,16 +369,19 @@
                                           <Component id="CokeLabel" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <Component id="CokeStocksLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="CheetosStocksLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
-                                      <Component id="BuyDoritosButton" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="WaterStocksLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="DragonFruitStocksLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                                          </Group>
                                           <Group type="102" attributes="0">
                                               <Component id="BuyWaterButton" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
@@ -392,6 +395,16 @@
                                               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="DoritosStocksLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="BuyDoritosButton" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="BurgerStocksLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -428,19 +441,33 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="SnacksMachineLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="BurgerLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="DoritosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="CheetosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="BurgerLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DoritosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="CheetosLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="BuyDoritosButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BuyCheetosButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BuyBurgerButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="CheetosStocksLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DoritosStocksLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="BurgerStocksLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="BuyDoritosButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="BuyCheetosButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="BuyBurgerButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="BeveragesLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -450,7 +477,7 @@
                                   <Component id="BuyWaterButton" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="BuyCoffeeButton" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -458,9 +485,15 @@
                                   <Component id="WaterLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="CoffeeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="240" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="DragonFruitStocksLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="WaterStocksLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="CokeStocksLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -721,6 +754,54 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BuyCokeButtonActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="DragonFruitStocksLabel">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Available Stocks: 10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="WaterStocksLabel">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Available Stocks: 10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="CokeStocksLabel">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Available Stocks: 10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="CheetosStocksLabel">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Available Stocks: 10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="DoritosStocksLabel">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Available Stocks: 10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="BurgerStocksLabel">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Available Stocks: 10"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
