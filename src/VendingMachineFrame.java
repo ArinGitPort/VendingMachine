@@ -348,22 +348,22 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         });
 
         DragonFruitStocksLabel.setForeground(new java.awt.Color(255, 255, 255));
-        DragonFruitStocksLabel.setText("Available Stocks: 10");
+        DragonFruitStocksLabel.setText("Dragon Fruit Stocks: 10");
 
         WaterStocksLabel.setForeground(new java.awt.Color(255, 255, 255));
-        WaterStocksLabel.setText("Available Stocks: 10");
+        WaterStocksLabel.setText("Water Stocks: 10");
 
         CokeStocksLabel.setForeground(new java.awt.Color(255, 255, 255));
-        CokeStocksLabel.setText("Available Stocks: 10");
+        CokeStocksLabel.setText("Coke Stocks: 10");
 
         CheetosStocksLabel.setForeground(new java.awt.Color(255, 255, 255));
-        CheetosStocksLabel.setText("Available Stocks: 10");
+        CheetosStocksLabel.setText("Cheetos Stocks: 10");
 
         DoritosStocksLabel.setForeground(new java.awt.Color(255, 255, 255));
-        DoritosStocksLabel.setText("Available Stocks: 10");
+        DoritosStocksLabel.setText("Doritos Stocks: 10");
 
         BurgerStocksLabel.setForeground(new java.awt.Color(255, 255, 255));
-        BurgerStocksLabel.setText("Available Stocks: 10");
+        BurgerStocksLabel.setText("Burger Stocks: 10");
 
         javax.swing.GroupLayout ProductPanelLayout = new javax.swing.GroupLayout(ProductPanel);
         ProductPanel.setLayout(ProductPanelLayout);
@@ -382,27 +382,30 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                                 .addGroup(ProductPanelLayout.createSequentialGroup()
                                     .addGap(18, 18, 18)
                                     .addComponent(CokeLabel)))
-                            .addComponent(CokeStocksLabel)
-                            .addComponent(CheetosStocksLabel))
+                            .addComponent(CheetosStocksLabel)
+                            .addGroup(ProductPanelLayout.createSequentialGroup()
+                                .addComponent(CokeStocksLabel)
+                                .addGap(11, 11, 11)))
                         .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(ProductPanelLayout.createSequentialGroup()
                                 .addGap(131, 131, 131)
                                 .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(ProductPanelLayout.createSequentialGroup()
-                                        .addComponent(WaterStocksLabel)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(DragonFruitStocksLabel)
-                                        .addGap(81, 81, 81))
-                                    .addGroup(ProductPanelLayout.createSequentialGroup()
-                                        .addComponent(BuyWaterButton)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(BuyCoffeeButton)
-                                        .addGap(78, 78, 78))
-                                    .addGroup(ProductPanelLayout.createSequentialGroup()
                                         .addComponent(WaterLabel)
                                         .addGap(51, 51, 51)
                                         .addComponent(CoffeeLabel)
-                                        .addGap(20, 20, 20))))
+                                        .addGap(20, 20, 20))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProductPanelLayout.createSequentialGroup()
+                                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(BuyWaterButton)
+                                            .addGroup(ProductPanelLayout.createSequentialGroup()
+                                                .addGap(9, 9, 9)
+                                                .addComponent(WaterStocksLabel)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(DragonFruitStocksLabel)
+                                            .addComponent(BuyCoffeeButton))
+                                        .addGap(68, 68, 68))))
                             .addGroup(ProductPanelLayout.createSequentialGroup()
                                 .addGap(136, 136, 136)
                                 .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -701,27 +704,27 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     }
 
     private void WaterStocks(int availability) {
-        WaterStocksLabel.setText("Available Stocks: " + availability); // Display the number of available stocks
+        WaterStocksLabel.setText("Water Stocks: " + availability); // Display the number of available stocks
     }
 
     private void CokeStocks(int availability) {
-        CokeStocksLabel.setText("Available Stocks: " + availability); // Display the number of available stocks
+        CokeStocksLabel.setText("Coke Stocks: " + availability); // Display the number of available stocks
     }
 
     private void DragonFruitStocks(int availability) {
-        DragonFruitStocksLabel.setText("Available Stocks: " + availability); // Display the number of available stocks
+        DragonFruitStocksLabel.setText("DragonFruit Stocks: " + availability); // Display the number of available stocks
     }
 
     private void CheetosStocks(int availability) {
-        CheetosStocksLabel.setText("Available Stocks: " + availability); // Display the number of available stocks
+        CheetosStocksLabel.setText("Cheetos Stocks: " + availability); // Display the number of available stocks
     }
 
     private void DoritosStocks(int availability) {
-        DoritosStocksLabel.setText("Available Stocks: " + availability); // Display the number of available stocks
+        DoritosStocksLabel.setText("Doritos Stocks: " + availability); // Display the number of available stocks
     }
 
     private void BurgerStocks(int availability) {
-        BurgerStocksLabel.setText("Available Stocks: " + availability); // Display the number of available stocks
+        BurgerStocksLabel.setText("Burger Stocks: " + availability); // Display the number of available stocks
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
