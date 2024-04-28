@@ -10,7 +10,7 @@
 class Coffee implements Beverage {
     @Override
     public String getName() {
-        return "Coffee";
+        return "Mango Dragon Fruit Lemonade";
     }
 
     @Override

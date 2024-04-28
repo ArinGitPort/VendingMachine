@@ -8,5 +8,5 @@
  * @author allen
  */
 interface Beverage extends Product {
-    // Add methods specific to beverages if needed
+   
 }

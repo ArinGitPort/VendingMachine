@@ -46,357 +46,385 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        ButtonPanel = new javax.swing.JPanel();
+        TwentyphpButton = new javax.swing.JButton();
+        HundredphpButton = new javax.swing.JButton();
+        TenphpButton = new javax.swing.JButton();
+        ThirtyphpButton = new javax.swing.JButton();
+        FiftyphpButton = new javax.swing.JButton();
+        LazatinMachineLabel = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        TotalBalance = new javax.swing.JLabel();
+        CashOutButton = new javax.swing.JButton();
+        BalanceLabel = new javax.swing.JLabel();
+        ProductPanel = new javax.swing.JPanel();
+        BeveragesLabel = new javax.swing.JLabel();
+        SnacksMachineLabel = new javax.swing.JLabel();
+        BuyCheetosButton = new javax.swing.JButton();
+        BuyBurgerButton = new javax.swing.JButton();
+        BuyDoritosButton = new javax.swing.JButton();
+        CokeLabel = new javax.swing.JLabel();
+        WaterLabel = new javax.swing.JLabel();
+        CoffeeLabel = new javax.swing.JLabel();
+        BurgerLabel = new javax.swing.JLabel();
+        DoritosLabel = new javax.swing.JLabel();
+        CheetosLabel = new javax.swing.JLabel();
+        BuyCoffeeButton = new javax.swing.JButton();
+        BuyWaterButton = new javax.swing.JButton();
+        BuyCokeButton = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 51));
 
-        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        ButtonPanel.setBackground(new java.awt.Color(0, 102, 102));
+        ButtonPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("20 PHP");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        TwentyphpButton.setBackground(new java.awt.Color(0, 204, 204));
+        TwentyphpButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        TwentyphpButton.setForeground(new java.awt.Color(255, 255, 255));
+        TwentyphpButton.setText("20 PHP");
+        TwentyphpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                TwentyphpButtonActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 204, 204));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("70 PHP");
-        jButton2.setActionCommand("30 PHP");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        HundredphpButton.setBackground(new java.awt.Color(0, 204, 204));
+        HundredphpButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        HundredphpButton.setForeground(new java.awt.Color(255, 255, 255));
+        HundredphpButton.setText("100 PHP");
+        HundredphpButton.setActionCommand("30 PHP");
+        HundredphpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                HundredphpButtonActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 204, 204));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("10 PHP");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        TenphpButton.setBackground(new java.awt.Color(0, 204, 204));
+        TenphpButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        TenphpButton.setForeground(new java.awt.Color(255, 255, 255));
+        TenphpButton.setText("10 PHP");
+        TenphpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                TenphpButtonActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 204, 204));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("30 PHP");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        ThirtyphpButton.setBackground(new java.awt.Color(0, 204, 204));
+        ThirtyphpButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        ThirtyphpButton.setForeground(new java.awt.Color(255, 255, 255));
+        ThirtyphpButton.setText("30 PHP");
+        ThirtyphpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                ThirtyphpButtonActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(0, 204, 204));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("50 PHP");
-        jButton5.setActionCommand("30 PHP");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        FiftyphpButton.setBackground(new java.awt.Color(0, 204, 204));
+        FiftyphpButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        FiftyphpButton.setForeground(new java.awt.Color(255, 255, 255));
+        FiftyphpButton.setText("50 PHP");
+        FiftyphpButton.setActionCommand("30 PHP");
+        FiftyphpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                FiftyphpButtonActionPerformed(evt);
             }
         });
 
-        jLabel1.setBackground(new java.awt.Color(0, 204, 204));
-        jLabel1.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Lazatin Machine");
-        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        LazatinMachineLabel.setBackground(new java.awt.Color(0, 204, 204));
+        LazatinMachineLabel.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        LazatinMachineLabel.setForeground(new java.awt.Color(255, 255, 255));
+        LazatinMachineLabel.setText("Lazatin Machine.co");
+        LazatinMachineLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        jLabel11.setBackground(new java.awt.Color(0, 0, 0));
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Webp.net-resizeimage.png"))); // NOI18N
+        jLabel11.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, java.awt.Color.pink));
 
-        jLabel10.setBackground(new java.awt.Color(0, 204, 204));
-        jLabel10.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Balance");
-        jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        TotalBalance.setBackground(new java.awt.Color(0, 204, 204));
+        TotalBalance.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        TotalBalance.setForeground(new java.awt.Color(255, 255, 255));
+        TotalBalance.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton13.setBackground(new java.awt.Color(0, 153, 153));
-        jButton13.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("CASH OUT");
-        jButton13.setName("Cheetos"); // NOI18N
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        CashOutButton.setBackground(new java.awt.Color(0, 153, 153));
+        CashOutButton.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
+        CashOutButton.setForeground(new java.awt.Color(255, 255, 255));
+        CashOutButton.setText("CASH OUT");
+        CashOutButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.cyan));
+        CashOutButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        CashOutButton.setName("Cheetos"); // NOI18N
+        CashOutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                CashOutButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(59, 59, 59))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel11))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+        BalanceLabel.setFont(new java.awt.Font("Unispace", 1, 24)); // NOI18N
+        BalanceLabel.setForeground(new java.awt.Color(255, 255, 255));
+        BalanceLabel.setText("Balance:");
+
+        javax.swing.GroupLayout ButtonPanelLayout = new javax.swing.GroupLayout(ButtonPanel);
+        ButtonPanel.setLayout(ButtonPanelLayout);
+        ButtonPanelLayout.setHorizontalGroup(
+            ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ButtonPanelLayout.createSequentialGroup()
+                .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
                         .addGap(108, 108, 108)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)
-                            .addComponent(jButton1)
-                            .addComponent(jButton4)
-                            .addComponent(jButton5)
-                            .addComponent(jLabel10)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(jButton13)))
-                .addContainerGap(58, Short.MAX_VALUE))
+                        .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(HundredphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TenphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TwentyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ThirtyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(FiftyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addComponent(CashOutButton))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(BalanceLabel)
+                        .addGap(31, 31, 31)
+                        .addComponent(TotalBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LazatinMachineLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        ButtonPanelLayout.setVerticalGroup(
+            ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonPanelLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel1)
+                .addComponent(LazatinMachineLabel)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11)
                 .addGap(40, 40, 40)
-                .addComponent(jButton3)
+                .addComponent(TenphpButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(TwentyphpButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4)
+                .addComponent(ThirtyphpButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton5)
+                .addComponent(FiftyphpButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
-                .addGap(37, 37, 37)
-                .addComponent(jLabel10)
-                .addGap(18, 18, 18)
-                .addComponent(jButton13)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addComponent(HundredphpButton)
+                .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(TotalBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(BalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addComponent(CashOutButton)
+                .addGap(22, 22, 22))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
-        jPanel3.setBorder(new javax.swing.border.MatteBorder(null));
-
-        jLabel2.setBackground(new java.awt.Color(0, 204, 204));
-        jLabel2.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Beverages");
-        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jLabel3.setBackground(new java.awt.Color(0, 204, 204));
-        jLabel3.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("SNACKS");
-        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jButton7.setBackground(new java.awt.Color(0, 153, 153));
-        jButton7.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Buy: 50Php");
-        jButton7.setName("Cheetos"); // NOI18N
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                // Show a message dialog when the label is clicked
+                JOptionPane.showMessageDialog(null, "Founders of Machine.Co");
             }
         });
 
-        jButton8.setBackground(new java.awt.Color(0, 153, 153));
-        jButton8.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Buy: 100Php");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        ProductPanel.setBackground(new java.awt.Color(0, 102, 102));
+        ProductPanel.setBorder(new javax.swing.border.MatteBorder(null));
+
+        BeveragesLabel.setBackground(new java.awt.Color(0, 204, 204));
+        BeveragesLabel.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        BeveragesLabel.setForeground(new java.awt.Color(255, 255, 255));
+        BeveragesLabel.setText("Beverages");
+        BeveragesLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        SnacksMachineLabel.setBackground(new java.awt.Color(0, 204, 204));
+        SnacksMachineLabel.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        SnacksMachineLabel.setForeground(new java.awt.Color(255, 255, 255));
+        SnacksMachineLabel.setText("SNACKS");
+        SnacksMachineLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        BuyCheetosButton.setBackground(new java.awt.Color(0, 153, 153));
+        BuyCheetosButton.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
+        BuyCheetosButton.setForeground(new java.awt.Color(255, 255, 255));
+        BuyCheetosButton.setText("Buy: 50Php");
+        BuyCheetosButton.setName("Cheetos"); // NOI18N
+        BuyCheetosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                BuyCheetosButtonActionPerformed(evt);
             }
         });
 
-        jButton9.setBackground(new java.awt.Color(0, 153, 153));
-        jButton9.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Buy: 30Php");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        BuyBurgerButton.setBackground(new java.awt.Color(0, 153, 153));
+        BuyBurgerButton.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
+        BuyBurgerButton.setForeground(new java.awt.Color(255, 255, 255));
+        BuyBurgerButton.setText("Buy: 100Php");
+        BuyBurgerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                BuyBurgerButtonActionPerformed(evt);
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coke.png"))); // NOI18N
-        jLabel4.setText("Coke");
-        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel5.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/water.png"))); // NOI18N
-        jLabel5.setText("Water");
-        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel6.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee-cup.png"))); // NOI18N
-        jLabel6.setText("Coffee");
-        jLabel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel7.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/burger.png"))); // NOI18N
-        jLabel7.setText("Burger");
-        jLabel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel8.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chips.png"))); // NOI18N
-        jLabel8.setText("Doritos");
-        jLabel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel9.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chips.png"))); // NOI18N
-        jLabel9.setText("Cheetos");
-        jLabel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jLabel9.setName(""); // NOI18N
-
-        jButton10.setBackground(new java.awt.Color(0, 153, 153));
-        jButton10.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Buy: 120Php");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        BuyDoritosButton.setBackground(new java.awt.Color(0, 153, 153));
+        BuyDoritosButton.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
+        BuyDoritosButton.setForeground(new java.awt.Color(255, 255, 255));
+        BuyDoritosButton.setText("Buy: 30Php");
+        BuyDoritosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                BuyDoritosButtonActionPerformed(evt);
             }
         });
 
-        jButton11.setBackground(new java.awt.Color(0, 153, 153));
-        jButton11.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("Buy: 10Php");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        CokeLabel.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
+        CokeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CokeLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coke.png"))); // NOI18N
+        CokeLabel.setText("Coke");
+        CokeLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        WaterLabel.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
+        WaterLabel.setForeground(new java.awt.Color(255, 255, 255));
+        WaterLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/water.png"))); // NOI18N
+        WaterLabel.setText("Water");
+        WaterLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        CoffeeLabel.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
+        CoffeeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CoffeeLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee-cup.png"))); // NOI18N
+        CoffeeLabel.setText("Mango Dragonfruit");
+        CoffeeLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        BurgerLabel.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
+        BurgerLabel.setForeground(new java.awt.Color(255, 255, 255));
+        BurgerLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/burger.png"))); // NOI18N
+        BurgerLabel.setText("Burger");
+        BurgerLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        DoritosLabel.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
+        DoritosLabel.setForeground(new java.awt.Color(255, 255, 255));
+        DoritosLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chips.png"))); // NOI18N
+        DoritosLabel.setText("Doritos");
+        DoritosLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        CheetosLabel.setFont(new java.awt.Font("SimSun", 0, 24)); // NOI18N
+        CheetosLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CheetosLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chips.png"))); // NOI18N
+        CheetosLabel.setText("Cheetos");
+        CheetosLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        CheetosLabel.setName(""); // NOI18N
+
+        BuyCoffeeButton.setBackground(new java.awt.Color(0, 153, 153));
+        BuyCoffeeButton.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
+        BuyCoffeeButton.setForeground(new java.awt.Color(255, 255, 255));
+        BuyCoffeeButton.setText("Buy: 120Php");
+        BuyCoffeeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                BuyCoffeeButtonActionPerformed(evt);
             }
         });
 
-        jButton12.setBackground(new java.awt.Color(0, 153, 153));
-        jButton12.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("Buy: 40Php");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        BuyWaterButton.setBackground(new java.awt.Color(0, 153, 153));
+        BuyWaterButton.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
+        BuyWaterButton.setForeground(new java.awt.Color(255, 255, 255));
+        BuyWaterButton.setText("Buy: 10Php");
+        BuyWaterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                BuyWaterButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        BuyCokeButton.setBackground(new java.awt.Color(0, 153, 153));
+        BuyCokeButton.setFont(new java.awt.Font("Unispace", 0, 12)); // NOI18N
+        BuyCokeButton.setForeground(new java.awt.Color(255, 255, 255));
+        BuyCokeButton.setText("Buy: 40Php");
+        BuyCokeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuyCokeButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ProductPanelLayout = new javax.swing.GroupLayout(ProductPanel);
+        ProductPanel.setLayout(ProductPanelLayout);
+        ProductPanelLayout.setHorizontalGroup(
+            ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ProductPanelLayout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(184, 184, 184)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jButton7))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(69, 69, 69)))
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jButton8)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton12)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addComponent(jLabel4)))
-                        .addGap(88, 88, 88)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel6))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jButton11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton10)))))
-                .addGap(47, 47, 47))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(241, 241, 241))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jLabel3)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ProductPanelLayout.createSequentialGroup()
+                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BuyCheetosButton)
+                            .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(ProductPanelLayout.createSequentialGroup()
+                                    .addGap(10, 10, 10)
+                                    .addComponent(BuyCokeButton))
+                                .addGroup(ProductPanelLayout.createSequentialGroup()
+                                    .addGap(18, 18, 18)
+                                    .addComponent(CokeLabel))))
+                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ProductPanelLayout.createSequentialGroup()
+                                .addGap(136, 136, 136)
+                                .addComponent(BuyDoritosButton)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(ProductPanelLayout.createSequentialGroup()
+                                .addGap(131, 131, 131)
+                                .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(ProductPanelLayout.createSequentialGroup()
+                                        .addComponent(BuyWaterButton)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(BuyCoffeeButton)
+                                        .addGap(78, 78, 78))
+                                    .addGroup(ProductPanelLayout.createSequentialGroup()
+                                        .addComponent(WaterLabel)
+                                        .addGap(51, 51, 51)
+                                        .addComponent(CoffeeLabel)
+                                        .addGap(20, 20, 20))))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProductPanelLayout.createSequentialGroup()
+                        .addComponent(CheetosLabel)
+                        .addGap(114, 114, 114)
+                        .addComponent(DoritosLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton9)
-                            .addComponent(jButton7)
-                            .addComponent(jButton8))
-                        .addGap(64, 64, 64))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jLabel2)
-                .addGap(110, 110, 110)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton12)
-                    .addComponent(jButton11)
-                    .addComponent(jButton10))
-                .addGap(155, 155, 155))
+                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BurgerLabel)
+                            .addComponent(BuyBurgerButton))
+                        .addGap(67, 67, 67))))
+            .addGroup(ProductPanelLayout.createSequentialGroup()
+                .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ProductPanelLayout.createSequentialGroup()
+                        .addGap(312, 312, 312)
+                        .addComponent(SnacksMachineLabel))
+                    .addGroup(ProductPanelLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(BeveragesLabel)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ProductPanelLayout.setVerticalGroup(
+            ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProductPanelLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(SnacksMachineLabel)
+                .addGap(78, 78, 78)
+                .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BurgerLabel)
+                    .addComponent(DoritosLabel)
+                    .addComponent(CheetosLabel))
+                .addGap(65, 65, 65)
+                .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BuyDoritosButton)
+                    .addComponent(BuyCheetosButton)
+                    .addComponent(BuyBurgerButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BeveragesLabel)
+                .addGap(52, 52, 52)
+                .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProductPanelLayout.createSequentialGroup()
+                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BuyCokeButton)
+                            .addComponent(BuyWaterButton)
+                            .addComponent(BuyCoffeeButton))
+                        .addGap(144, 144, 144))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ProductPanelLayout.createSequentialGroup()
+                        .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CokeLabel)
+                            .addComponent(WaterLabel)
+                            .addComponent(CoffeeLabel))
+                        .addGap(240, 240, 240))))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -405,9 +433,9 @@ public class VendingMachineFrame extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ButtonPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ProductPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -415,8 +443,8 @@ public class VendingMachineFrame extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(ProductPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ButtonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -438,93 +466,141 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void TwentyphpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TwentyphpButtonActionPerformed
         totalMoney += 20.0;
         // Update the display
-        jLabel10.setText("Bal: PHP " + totalMoney);
-        jLabel10.setVisible(true);
+        TotalBalance.setText("Bal: PHP " + totalMoney);
+        TotalBalance.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 20 Php");
 
+    }//GEN-LAST:event_TwentyphpButtonActionPerformed
 
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        totalMoney += 70.0;
+    private void HundredphpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HundredphpButtonActionPerformed
+        totalMoney += 100.0;
         // Update the display
-        jLabel10.setText("Bal: PHP " + totalMoney);
-        jLabel10.setVisible(true);
+        TotalBalance.setText("PHP " + totalMoney);
+        TotalBalance.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 100 Php");
 
+    }//GEN-LAST:event_HundredphpButtonActionPerformed
 
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void TenphpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TenphpButtonActionPerformed
         totalMoney += 10.0;
         // Update the display
-        jLabel10.setText("Bal: PHP " + totalMoney);
-        jLabel10.setVisible(true);
+        TotalBalance.setText("PHP " + totalMoney);
+        TotalBalance.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 10 Php");
+    }//GEN-LAST:event_TenphpButtonActionPerformed
 
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void ThirtyphpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ThirtyphpButtonActionPerformed
         totalMoney += 30.0;
         // Update the display
-        jLabel10.setText("Bal: PHP " + totalMoney);
-        jLabel10.setVisible(true);
+        TotalBalance.setText("PHP " + totalMoney);
+        TotalBalance.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 30 Php");
 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_ThirtyphpButtonActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void FiftyphpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FiftyphpButtonActionPerformed
         totalMoney += 50.0;
         // Update the display
-        jLabel3.setText("Bal: PHP " + totalMoney);
-    }//GEN-LAST:event_jButton5ActionPerformed
+        TotalBalance.setText("PHP " + totalMoney);
+        TotalBalance.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 50 Php");
+    }//GEN-LAST:event_FiftyphpButtonActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        buyProduct(new Coke(), 40.0, cokeAvailability);
-        cokeAvailability--;
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        buyProduct(new Cheetos(), 50.0, cheetosAvailability);
-        cheetosAvailability--;
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        buyProduct(new Doritos(), 30.0, doritosAvailability);
-        doritosAvailability--;
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        buyProduct(new Burger(), 100.0, burgerAvailability);
-        burgerAvailability--;
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        buyProduct(new Water(), 10.0, waterAvailability);
-        waterAvailability--;
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        buyProduct(new Coffee(), 120.0, coffeeAvailability);
-        coffeeAvailability--;
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        JOptionPane.showMessageDialog(this, "Remaining Funds: PHP " + totalMoney);
-        if (totalMoney == 0) {
-            JOptionPane.showMessageDialog(this, "You have no balance");
+    private void BuyCokeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyCokeButtonActionPerformed
+        if (totalMoney >= 40.0) {
+            int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Coke?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                buyProduct(new Coke(), 40.0, cokeAvailability);
+                cokeAvailability--;
+            }
         } else {
-            JOptionPane.showMessageDialog(this, "Cashing Out: PHP " + totalMoney);
-            totalMoney = 0.0;
-            jLabel10.setText("Bal: PHP " + totalMoney);
+            JOptionPane.showMessageDialog(this, "Insufficient funds.");
         }
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_BuyCokeButtonActionPerformed
+
+    private void BuyCheetosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyCheetosButtonActionPerformed
+        if (totalMoney >= 50.0) {
+            int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Cheetos?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                buyProduct(new Cheetos(), 50.0, cheetosAvailability);
+                cheetosAvailability--;
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Insufficient funds.");
+        }
+    }//GEN-LAST:event_BuyCheetosButtonActionPerformed
+
+    private void BuyDoritosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyDoritosButtonActionPerformed
+        if (totalMoney >= 30.0) {
+            int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Doritos?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                buyProduct(new Doritos(), 30.0, doritosAvailability);
+                doritosAvailability--;
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Insufficient funds.");
+        }
+    }//GEN-LAST:event_BuyDoritosButtonActionPerformed
+
+    private void BuyBurgerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyBurgerButtonActionPerformed
+        if (totalMoney >= 100.0) {
+            int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Burger?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                buyProduct(new Burger(), 100.0, burgerAvailability);
+                burgerAvailability--;
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Insufficient funds.");
+        }
+    }//GEN-LAST:event_BuyBurgerButtonActionPerformed
+
+    private void BuyWaterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyWaterButtonActionPerformed
+        if (totalMoney >= 10.0) {
+            int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Water?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                buyProduct(new Water(), 10.0, waterAvailability);
+                waterAvailability--;
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Insufficient funds.");
+        }
+    }//GEN-LAST:event_BuyWaterButtonActionPerformed
+
+    private void BuyCoffeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyCoffeeButtonActionPerformed
+        if (totalMoney >= 120.0) {
+            int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Coffee?", "Confirmation", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                buyProduct(new Coffee(), 120.0, coffeeAvailability);
+                coffeeAvailability--;
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Insufficient funds.");
+        }
+    }//GEN-LAST:event_BuyCoffeeButtonActionPerformed
+
+    private void CashOutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CashOutButtonActionPerformed
+        int option = JOptionPane.showConfirmDialog(this, "Do you want to cash out the remaining balance?", "Cash Out", JOptionPane.YES_NO_OPTION);
+        if (option == JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(this, "Remaining Funds: PHP " + totalMoney);
+            if (totalMoney == 0) {
+                JOptionPane.showMessageDialog(this, "You have no balance");
+            } else {
+                JOptionPane.showMessageDialog(this, "Cashing Out: PHP " + totalMoney);
+                totalMoney = 0.0;
+                TotalBalance.setText("PHP " + totalMoney);
+            }
+        }
+    }//GEN-LAST:event_CashOutButtonActionPerformed
     private void buyProduct(Product product, double price, int availability) {
         if (availability > 0) {
             if (totalMoney >= price) {
                 totalMoney -= price;
-                jLabel10.setText("Bal: PHP " + totalMoney);
-                jLabel10.setVisible(true);
-                jLabel10.repaint();
+                TotalBalance.setText("PHP " + totalMoney);
+                TotalBalance.setVisible(true);
+                TotalBalance.repaint();
                 JOptionPane.showMessageDialog(this, "Thank you for purchasing " + product.getName() + ". Your Balance: PHP " + totalMoney);
             } else {
                 JOptionPane.showMessageDialog(this, "Insufficient funds.");
@@ -536,31 +612,32 @@ public class VendingMachineFrame extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel BalanceLabel;
+    private javax.swing.JLabel BeveragesLabel;
+    private javax.swing.JLabel BurgerLabel;
+    private javax.swing.JPanel ButtonPanel;
+    private javax.swing.JButton BuyBurgerButton;
+    private javax.swing.JButton BuyCheetosButton;
+    private javax.swing.JButton BuyCoffeeButton;
+    private javax.swing.JButton BuyCokeButton;
+    private javax.swing.JButton BuyDoritosButton;
+    private javax.swing.JButton BuyWaterButton;
+    private javax.swing.JButton CashOutButton;
+    private javax.swing.JLabel CheetosLabel;
+    private javax.swing.JLabel CoffeeLabel;
+    private javax.swing.JLabel CokeLabel;
+    private javax.swing.JLabel DoritosLabel;
+    private javax.swing.JButton FiftyphpButton;
+    private javax.swing.JButton HundredphpButton;
+    private javax.swing.JLabel LazatinMachineLabel;
+    private javax.swing.JPanel ProductPanel;
+    private javax.swing.JLabel SnacksMachineLabel;
+    private javax.swing.JButton TenphpButton;
+    private javax.swing.JButton ThirtyphpButton;
+    private javax.swing.JLabel TotalBalance;
+    private javax.swing.JButton TwentyphpButton;
+    private javax.swing.JLabel WaterLabel;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,5 +8,5 @@
  * @author allen
  */
 interface Snack extends Product {
-    // Add methods specific to snacks if needed
+    
 }
