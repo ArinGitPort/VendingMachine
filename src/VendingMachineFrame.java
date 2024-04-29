@@ -8,7 +8,6 @@
  * @author allen
  */
 import javax.swing.JOptionPane;
-import javax.swing.*;
 
 public class VendingMachineFrame extends javax.swing.JPanel {
 
@@ -18,7 +17,6 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private Snack cheetos = new Cheetos();
     private Snack doritos = new Doritos();
     private Snack burger = new Burger();
-    private Product selectedProduct;
 
     private double totalMoney = 0.0;
 
@@ -43,7 +41,7 @@ public class VendingMachineFrame extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -55,9 +53,11 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         FiftyphpButton = new javax.swing.JButton();
         LazatinMachineLabel = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        TotalBalance = new javax.swing.JLabel();
+        TotalBalanceLabel = new javax.swing.JLabel();
         CashOutButton = new javax.swing.JButton();
         BalanceLabel = new javax.swing.JLabel();
+        FiveHundredphpButton1 = new javax.swing.JButton();
+        ThousandphpButton2 = new javax.swing.JButton();
         ProductPanel = new javax.swing.JPanel();
         BeveragesLabel = new javax.swing.JLabel();
         SnacksMachineLabel = new javax.swing.JLabel();
@@ -147,10 +147,10 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Webp.net-resizeimage.png"))); // NOI18N
         jLabel11.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.black, java.awt.Color.pink));
 
-        TotalBalance.setBackground(new java.awt.Color(0, 204, 204));
-        TotalBalance.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
-        TotalBalance.setForeground(new java.awt.Color(255, 255, 255));
-        TotalBalance.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        TotalBalanceLabel.setBackground(new java.awt.Color(0, 204, 204));
+        TotalBalanceLabel.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        TotalBalanceLabel.setForeground(new java.awt.Color(255, 255, 255));
+        TotalBalanceLabel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         CashOutButton.setBackground(new java.awt.Color(0, 153, 153));
         CashOutButton.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
@@ -169,6 +169,28 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         BalanceLabel.setForeground(new java.awt.Color(255, 255, 255));
         BalanceLabel.setText("Balance:");
 
+        FiveHundredphpButton1.setBackground(new java.awt.Color(0, 204, 204));
+        FiveHundredphpButton1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        FiveHundredphpButton1.setForeground(new java.awt.Color(255, 255, 255));
+        FiveHundredphpButton1.setText("500 PHP");
+        FiveHundredphpButton1.setActionCommand("30 PHP");
+        FiveHundredphpButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FiveHundredphpButton1ActionPerformed(evt);
+            }
+        });
+
+        ThousandphpButton2.setBackground(new java.awt.Color(0, 204, 204));
+        ThousandphpButton2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        ThousandphpButton2.setForeground(new java.awt.Color(255, 255, 255));
+        ThousandphpButton2.setText("1000 PHP");
+        ThousandphpButton2.setActionCommand("30 PHP");
+        ThousandphpButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ThousandphpButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ButtonPanelLayout = new javax.swing.GroupLayout(ButtonPanel);
         ButtonPanel.setLayout(ButtonPanelLayout);
         ButtonPanelLayout.setHorizontalGroup(
@@ -176,27 +198,29 @@ public class VendingMachineFrame extends javax.swing.JPanel {
             .addGroup(ButtonPanelLayout.createSequentialGroup()
                 .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addComponent(CashOutButton))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LazatinMachineLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(BalanceLabel)
+                        .addGap(28, 28, 28)
+                        .addComponent(TotalBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ButtonPanelLayout.createSequentialGroup()
                         .addGap(108, 108, 108)
                         .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(HundredphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(TenphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(TwentyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ThirtyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(FiftyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(ButtonPanelLayout.createSequentialGroup()
-                        .addGap(103, 103, 103)
-                        .addComponent(CashOutButton))
-                    .addGroup(ButtonPanelLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(BalanceLabel)
-                        .addGap(31, 31, 31)
-                        .addComponent(TotalBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(ButtonPanelLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(LazatinMachineLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(31, Short.MAX_VALUE))
+                            .addComponent(FiftyphpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(FiveHundredphpButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ThousandphpButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         ButtonPanelLayout.setVerticalGroup(
             ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -205,24 +229,28 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                 .addComponent(LazatinMachineLabel)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11)
-                .addGap(40, 40, 40)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TenphpButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TwentyphpButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ThirtyphpButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FiftyphpButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(HundredphpButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(FiveHundredphpButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ThousandphpButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(ButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ButtonPanelLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(TotalBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(ButtonPanelLayout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(BalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonPanelLayout.createSequentialGroup()
+                        .addComponent(BalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonPanelLayout.createSequentialGroup()
+                        .addComponent(TotalBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)))
                 .addComponent(CashOutButton)
                 .addGap(22, 22, 22))
         );
@@ -388,7 +416,7 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                                 .addGap(11, 11, 11)))
                         .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(ProductPanelLayout.createSequentialGroup()
-                                .addGap(131, 131, 131)
+                                .addGap(126, 126, 126)
                                 .addGroup(ProductPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(ProductPanelLayout.createSequentialGroup()
                                         .addComponent(WaterLabel)
@@ -518,13 +546,27 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
+
+    private void FiveHundredphpButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        totalMoney += 500.0;
+        // Update the display
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 500 Php");    }                                                     
+
+    private void ThousandphpButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        totalMoney += 1000.0;
+        // Update the display
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
+        JOptionPane.showMessageDialog(this, "Inserted: 1000 Php");    }                                                  
 
     private void TwentyphpButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_TwentyphpButtonActionPerformed
         totalMoney += 20.0;
         // Update the display
-        TotalBalance.setText("PHP " + totalMoney);
-        TotalBalance.setVisible(true);
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
         JOptionPane.showMessageDialog(this, "Inserted: 20 Php");
 
     }// GEN-LAST:event_TwentyphpButtonActionPerformed
@@ -532,8 +574,8 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private void HundredphpButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_HundredphpButtonActionPerformed
         totalMoney += 100.0;
         // Update the display
-        TotalBalance.setText("PHP " + totalMoney);
-        TotalBalance.setVisible(true);
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
         JOptionPane.showMessageDialog(this, "Inserted: 100 Php");
 
     }// GEN-LAST:event_HundredphpButtonActionPerformed
@@ -541,16 +583,16 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private void TenphpButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_TenphpButtonActionPerformed
         totalMoney += 10.0;
         // Update the display
-        TotalBalance.setText("PHP " + totalMoney);
-        TotalBalance.setVisible(true);
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
         JOptionPane.showMessageDialog(this, "Inserted: 10 Php");
     }// GEN-LAST:event_TenphpButtonActionPerformed
 
     private void ThirtyphpButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_ThirtyphpButtonActionPerformed
         totalMoney += 30.0;
         // Update the display
-        TotalBalance.setText("PHP " + totalMoney);
-        TotalBalance.setVisible(true);
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
         JOptionPane.showMessageDialog(this, "Inserted: 30 Php");
 
     }// GEN-LAST:event_ThirtyphpButtonActionPerformed
@@ -558,8 +600,8 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private void FiftyphpButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_FiftyphpButtonActionPerformed
         totalMoney += 50.0;
         // Update the display
-        TotalBalance.setText("PHP " + totalMoney);
-        TotalBalance.setVisible(true);
+        TotalBalanceLabel.setText("PHP " + totalMoney);
+        TotalBalanceLabel.setVisible(true);
         JOptionPane.showMessageDialog(this, "Inserted: 50 Php");
     }// GEN-LAST:event_FiftyphpButtonActionPerformed
 
@@ -656,7 +698,7 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private void BuyCoffeeButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_BuyCoffeeButtonActionPerformed
         if (coffeeAvailability > 0) { // Check if Coffee is available
             if (totalMoney >= 120.0) {
-                int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Coffee?", "Confirmation",
+                int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to buy Mango Dragon Fruit?", "Confirmation",
                         JOptionPane.YES_NO_OPTION);
                 if (confirm == JOptionPane.YES_OPTION) {
                     buyProduct(new Coffee(), 120.0, coffeeAvailability);
@@ -667,7 +709,7 @@ public class VendingMachineFrame extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(this, "Insufficient funds.");
             }
         } else {
-            JOptionPane.showMessageDialog(this, "Coffee is out of stock.");
+            JOptionPane.showMessageDialog(this, "Dragon Fruit is out of stock.");
         }
     }// GEN-LAST:event_BuyCoffeeButtonActionPerformed
 
@@ -675,13 +717,13 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         int option = JOptionPane.showConfirmDialog(this, "Do you want to cash out the remaining balance?", "Cash Out",
                 JOptionPane.YES_NO_OPTION);
         if (option == JOptionPane.YES_OPTION) {
-            JOptionPane.showMessageDialog(this, "Remaining Funds: PHP " + totalMoney);
+            JOptionPane.showMessageDialog(this, "Remaining Balance: PHP " + totalMoney);
             if (totalMoney == 0) {
                 JOptionPane.showMessageDialog(this, "You have no balance");
             } else {
                 JOptionPane.showMessageDialog(this, "Cashing Out: PHP " + totalMoney);
                 totalMoney = 0.0;
-                TotalBalance.setText("PHP " + totalMoney);
+                TotalBalanceLabel.setText("PHP " + totalMoney);
             }
         }
     }// GEN-LAST:event_CashOutButtonActionPerformed
@@ -690,11 +732,11 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         if (availability > 0) {
             if (totalMoney >= price) {
                 totalMoney -= price;
-                TotalBalance.setText("PHP " + totalMoney);
-                TotalBalance.setVisible(true);
-                TotalBalance.repaint();
+                TotalBalanceLabel.setText("PHP " + totalMoney);
+                TotalBalanceLabel.setVisible(true);
+                TotalBalanceLabel.repaint();
                 JOptionPane.showMessageDialog(this,
-                        "Thank you for purchasing " + product.getName() + ". Your Balance: PHP " + totalMoney);
+                        "Thank you for purchasing " + product.getName() + ". Your Remaining Balance: PHP " + totalMoney);
             } else {
                 JOptionPane.showMessageDialog(this, "Insufficient funds.");
             }
@@ -727,7 +769,8 @@ public class VendingMachineFrame extends javax.swing.JPanel {
         BurgerStocksLabel.setText("Burger Stocks: " + availability); // Display the number of available stocks
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
+    // Variables declaration - do not modify                     
     private javax.swing.JLabel BalanceLabel;
     private javax.swing.JLabel BeveragesLabel;
     private javax.swing.JLabel BurgerLabel;
@@ -749,17 +792,19 @@ public class VendingMachineFrame extends javax.swing.JPanel {
     private javax.swing.JLabel DoritosStocksLabel;
     private javax.swing.JLabel DragonFruitStocksLabel;
     private javax.swing.JButton FiftyphpButton;
+    private javax.swing.JButton FiveHundredphpButton1;
     private javax.swing.JButton HundredphpButton;
     private javax.swing.JLabel LazatinMachineLabel;
     private javax.swing.JPanel ProductPanel;
     private javax.swing.JLabel SnacksMachineLabel;
     private javax.swing.JButton TenphpButton;
     private javax.swing.JButton ThirtyphpButton;
-    private javax.swing.JLabel TotalBalance;
+    private javax.swing.JButton ThousandphpButton2;
+    private javax.swing.JLabel TotalBalanceLabel;
     private javax.swing.JButton TwentyphpButton;
     private javax.swing.JLabel WaterLabel;
     private javax.swing.JLabel WaterStocksLabel;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JPanel jPanel1;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
